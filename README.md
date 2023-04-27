@@ -3,7 +3,7 @@ Reference for Typescript code snippets
 
 
 ## ReturnType ([reference](https://www.typescriptlang.org/docs/handbook/utility-types.html#returntypetype))
-```
+```tsx
 const myFunc = () => {
     return "this is a string"
 }
