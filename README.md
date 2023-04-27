@@ -1,2 +1,2 @@
 # Typescript Tips and Tricks
-Reference for Code Typescript snippets
+Reference for Typescript code snippet
