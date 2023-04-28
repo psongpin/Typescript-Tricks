@@ -30,3 +30,17 @@ type MyFuncParams = Parameters<typeof myFunc>
 type Param1 = MyFuncParams[0]
 type Param2 = MyFuncParams[1]
 ```
+
+## [Awaited](https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype)
+```tsx
+const myFunc = () => {
+  return Promise.resolve({
+    id: 12345,
+    firstName: "Paul Simon",
+    lastName: "Ongpin",
+  })
+}
+
+type PromiseReturn = ReturnType<typeof myFunc>
+type ResolvedValue = Awaited<PromiseReturn>
+```
