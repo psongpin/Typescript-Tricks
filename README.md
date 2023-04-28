@@ -45,7 +45,7 @@ type PromiseReturn = ReturnType<typeof myFunc>
 type ResolvedValue = Awaited<PromiseReturn>
 ```
 
-## [keyof]([https://www.typescriptlang.org/docs/handbook/utility-types.html#awaitedtype](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#the-keyof-type-operator))
+## [keyof](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html#the-keyof-type-operator)
 ```tsx
 const libraryRepos = {
   react: "https://github.com/facebook/react",
