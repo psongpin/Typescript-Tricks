@@ -1,4 +1,4 @@
-# Typescript Tips and Tricks
+# Typescript Cheatsheet
 Reference for Typescript code snippets
 
 
@@ -55,4 +55,15 @@ const libraryRepos = {
 
 type LibraryReposKeys = keyof typeof libraryRepos
 // "react" | "vue" | "angular"
+```
+
+## [Extract](https://www.typescriptlang.org/docs/handbook/utility-types.html#extracttype-union)
+```tsx
+type Action =
+  | { type: "click"; event: MouseEvent }
+  | { type: "focus"; event: FocusEvent }
+  | { type: "keydown"; event: KeyboardEvent }
+type ClickEvt = Extract<Action, { type: "click" }>
+type FocusEvt = Extract<Action, { type: "focus" }>
+type KeyboardEvt = Extract<Action, { type: "keydown" }>
 ```
